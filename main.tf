@@ -25,7 +25,7 @@ module "windowsserver" {
   admin_password      = "${var.admin_password}"
   vm_os_simple        = "WindowsServer"
   public_ip_dns       = ["${var.windows_dns_prefix}"]
-  vm_size             = "{var.vm_size}"
+  vm_size             = "${var.vm_size}"
   vnet_subnet_id      = "${module.network.vnet_subnets[0]}"
 }
 
