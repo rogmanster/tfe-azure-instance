@@ -20,7 +20,7 @@ module "windowsserver" {
   source              = "Azure/compute/azurerm"
   version             = "1.1.5"
   location            = "${var.location}"
-  resource_group_name = "${var.environement}-rg"
+  resource_group_name = "${var.environment}-rg"
   vm_hostname         = "${var.environment}"
   admin_password      = "${var.admin_password}"
   vm_os_simple        = "WindowsServer"
